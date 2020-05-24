@@ -4,7 +4,6 @@ import "./styles.css";
 import AuthenticatedTopBar from "../../components/AuthenticatedTopBar";
 import Sidebar from "../../components/Sidebar";
 import ArticleRoadmapHeader from "../../components/ArticleRoadmapHeader"
-import Comments from "../../components/Comments"
 
 function Article() {
   const articleMock = {
@@ -20,21 +19,6 @@ function Article() {
       date: new Date("2020-05-24 08:12:00"),
       timeInMinutes: 12,
       likes: 800,
-      comments: [
-        {
-          text: 'Achei sensacional cara! Mas te indico melhorar essa conclusão.',
-          likes: 154,
-          date: new Date("2020-05-24 08:12:00"),
-          author: {
-            photoSrc: null,
-            name: 'Arthur Carvalho',
-            plan: 'Mestre Jedi',
-            facebook: 'fb.com/victormartinstinoco',
-            linkedin: 'linkedin.com/in/victormartinstinoco',
-            twitter: 'twitter.com//victrtinoco'
-          },
-        }
-      ],
       content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a eleifend tellus. Fusce tristique pulvinar porta. Fusce mattis est ac tempus blandit. Praesent imperdiet mi nibh, vitae pharetra est malesuada eget. Mauris egestas erat sem, in ultrices ante aliquet fringilla. Aenean pharetra vehicula est commodo dapibus. Vivamus nec ultricies eros. Morbi nec turpis sed arcu varius convallis. Cras ullamcorper nibh eleifend lacinia pellentesque. Sed varius porta arcu, non laoreet risus dictum ut. Morbi tristique in diam eget ullamcorper. Nulla euismod odio gravida vulputate fermentum. Sed posuere mauris quis odio tristique pretium. Aliquam risus turpis, condimentum id tempus ut, ultrices at odio. Donec et elit a dui euismod finibus quis a quam. Nunc aliquam hendrerit imperdiet.
 
       Proin ac venenatis mi, vel aliquet nisi. Duis in magna augue. Integer laoreet gravida velit. Nulla sed accumsan nisl, vel hendrerit felis. Vivamus vel elementum metus. Morbi at libero dui. Vestibulum ornare lectus in tortor tincidunt tincidunt. Sed velit quam, rhoncus ut sapien cursus, varius aliquet diam. Integer sed augue ut purus accumsan semper at tempor eros. Duis erat tortor, pharetra eget enim bibendum, sollicitudin porttitor lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -47,10 +31,9 @@ function Article() {
       <Sidebar />
       <div className="__consider-sidebar">
         <AuthenticatedTopBar />
-          <div className="article-content">
-            <ArticleRoadmapHeader article={articleMock} />
-          </div>
-          <Comments comments={articleMock.comments} />
+        <ArticleRoadmapHeader 
+          article={articleMock}
+        />
       </div>
     </div>
   );
