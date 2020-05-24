@@ -3,12 +3,13 @@ import "./styles.css";
 
 // Components
 import ProfileMenuOptions from "./ProfileMenuOptions";
+import SearchField from "../SearchField";
 import Button from "../Button";
 
 function AuthenticatedTopBar() {
   return (
-    <div className="auth-top-bar">
-      <div className=""></div>
+    <div className="auth-top-bar __consider-sidebar">
+      <SearchField />
       <div className="top-bar-right-content">
         <Button
           label="Criar nova trilha ou artigo"
