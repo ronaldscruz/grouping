@@ -14,7 +14,7 @@ export default function Routes() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/dashboard" component={Dashboard} />
-        <Route exact path="/articles/" component={Article} />
+        <Route exact path="/articles/:id" component={Article} />
         <Route exact path="/groups" component={Groups} />
         <Route exact path="/groups/:id" component={GroupChat} />
         <Route exact path="/signup" component={SignUp} />
