@@ -1,0 +1,45 @@
+.roadmap-details-component {
+  margin-bottom: 36px;
+}
+
+.roadmap-details-description {
+  color: #404040;
+  margin: 32px 0;
+  line-height: 28px;
+  font-size: 18px;
+}
+
+.roadmap-article-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 26px;
+}
+
+.is-read {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #ff6060;
+  border-radius: 32px;
+  margin-right: 20px;
+  position: relative;
+}
+
+.is-read.__read {
+  background: #ff6060;
+}
+
+.is-read::after {
+  content: "";
+  width: 0;
+  height: 200%;
+  position: absolute;
+  border: 1px solid #ff6060;
+  top: 100%;
+  left: 50%;
+}
+
+.roadmap-article-wrapper:last-child .is-read::after {
+  height: 0;
+  border: none;
+}

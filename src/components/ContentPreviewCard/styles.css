@@ -8,6 +8,10 @@
   padding: 4px 16px 4px;
 }
 
+.content-preview-card.__larger {
+  width: 625px;
+}
+
 .card-left-content {
   display: flex;
   flex-direction: column;
