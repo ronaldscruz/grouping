@@ -42,3 +42,11 @@
   color: #fff;
   background: linear-gradient(90deg, #d38282 0%, #ca6363 100%);
 }
+
+.__rounded {
+  border-radius: 12px;
+}
+
+.__bold {
+  font-weight: 750;
+}

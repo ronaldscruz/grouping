@@ -6,13 +6,17 @@ function Button({
   onPress = () => {},
   hasBg = true,
   hasGradient = false,
+  rounded = false,
+  bold = false,
 }) {
   hasBg = `${hasBg ? "__has-bg" : ""}`;
   hasGradient = `${hasGradient ? "__has-gradient" : ""}`;
+  rounded = `${rounded ? "__rounded" : ""}`;
+  bold = `${bold ? "__bold" : ""}`;
 
   return (
     <button
-      className={`colored-button ${hasBg} ${hasGradient}`}
+      className={`colored-button ${hasBg} ${hasGradient} ${rounded} ${bold}`}
       onClick={onPress}
     >
       {label}
