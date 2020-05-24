@@ -22,17 +22,35 @@ function Sidebar() {
               to="/dashboard"
               activeClassName="__selected"
             >
-              <Home className="__icon-mr" /> Home
+              <Home className="__large-mr" /> Home
             </NavLink>
           </li>
-          <li className="sidebar-item">
-            <ClearAll className="__icon-mr" /> Trilhas
+          <li>
+            <NavLink
+              className="sidebar-item"
+              to="/trilhas"
+              activeClassName="__selected"
+            >
+              <ClearAll className="__large-mr" /> Trilhas
+            </NavLink>
           </li>
-          <li className="sidebar-item">
-            <Assignment className="__icon-mr" /> Artigos
+          <li>
+            <NavLink
+              className="sidebar-item"
+              to="/artigos"
+              activeClassName="__selected"
+            >
+              <Assignment className="__large-mr" /> Artigos
+            </NavLink>
           </li>
-          <li className="sidebar-item">
-            <Group className="__icon-mr" /> Grupos
+          <li>
+            <NavLink
+              className="sidebar-item"
+              to="/grupos"
+              activeClassName="__selected"
+            >
+              <Group className="__large-mr" /> Grupos
+            </NavLink>
           </li>
         </ul>
       </div>

@@ -14,8 +14,17 @@ body {
   font-family: Avenir;
 }
 
-.__icon-mr {
+.__large-mr {
   margin-right: 15px;
+}
+
+.MuiSvgIcon-root.__smaller {
+  font-size: 12px;
+}
+
+.MuiSvgIcon-root.__mr {
+  margin-right: 4px;
+  margin-bottom: 2px;
 }
 
 .__consider-sidebar {

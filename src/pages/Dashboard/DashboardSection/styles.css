@@ -1,0 +1,13 @@
+.dashboard-section {
+  margin-bottom: 50px;
+}
+
+.dashboard-section-title {
+  color: #404040;
+  margin: 0 0 16px;
+}
+
+.content-card-dashboard {
+  display: inline-block;
+  margin: 0 26px 26px 0;
+}

@@ -20,6 +20,7 @@ function SubjectTabs({ onSubjectChange }) {
         name="filterBySubject"
         id="only-history"
         value="history"
+        defaultChecked={true}
         onChange={(e) => changeCurrentSubject(e.target.value)}
       />
       <label htmlFor="only-history" className="subject-tab">

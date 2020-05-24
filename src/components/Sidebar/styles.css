@@ -36,12 +36,12 @@
   transition: all 0.2s ease;
 }
 
-.sidebar-item a {
+a.sidebar-item {
   color: #404040;
   text-decoration: none !important;
 }
 
-.sidebar-item a:focus {
+a.sidebar-item {
   color: #404040;
   text-decoration: none;
   outline: 0 !important;
