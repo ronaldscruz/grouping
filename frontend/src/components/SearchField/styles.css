@@ -1,9 +1,12 @@
 .search-field {
   border: none;
+  width: 260px;
   height: 38px;
+  margin-left: 12px;
   background: none;
   color: #404040;
-  margin-left: 12px;
+  font-family: Avenir;
+  font-size: 14px;
 }
 
 .search-field:focus {

@@ -7,7 +7,11 @@ function SearchField() {
   return (
     <div className="search-field-wrapper">
       <Search />
-      <input name="search_field" className="search-field" />
+      <input
+        name="search_field"
+        className="search-field"
+        placeholder="Pesquisar"
+      />
     </div>
   );
 }
