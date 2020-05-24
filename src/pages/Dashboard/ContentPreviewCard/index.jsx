@@ -46,7 +46,7 @@ function ContentPreviewCard({
       <div className="card-left-content">
         <h1
           className="content-title"
-          onClick={() => history.push(`${type}/${id}`)}
+          onClick={() => history.push(`${type}s/${id}`)}
         >
           {" "}
           {title.toUpperCase()}{" "}
