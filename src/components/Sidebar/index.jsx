@@ -28,7 +28,7 @@ function Sidebar() {
           <li>
             <NavLink
               className="sidebar-item"
-              to="/trilhas"
+              to="/roadmaps"
               activeClassName="__selected"
             >
               <ClearAll className="__large-mr" /> Trilhas
@@ -37,7 +37,7 @@ function Sidebar() {
           <li>
             <NavLink
               className="sidebar-item"
-              to="/artigos"
+              to="/posts"
               activeClassName="__selected"
             >
               <Assignment className="__large-mr" /> Artigos
@@ -46,7 +46,7 @@ function Sidebar() {
           <li>
             <NavLink
               className="sidebar-item"
-              to="/grupos"
+              to="/groups"
               activeClassName="__selected"
             >
               <Group className="__large-mr" /> Grupos
