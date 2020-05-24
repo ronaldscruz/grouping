@@ -10,6 +10,9 @@ function Groups() {
       <Sidebar />
       <div className="__consider-sidebar">
         <AuthenticatedTopBar />
+        <h1 className="groups-greeting"></h1>
+        <span className="groups-description"></span>
+        <div className="groups-listing"></div>
       </div>
     </div>
   );
