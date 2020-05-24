@@ -7,7 +7,7 @@ import { useHistory } from "react-router-dom";
 import Button from "../Button";
 import Logo from "../Logo";
 
-function UnauthenticatedTopBar({ inRegister = false }) {
+function UnauthenticatedTopBar() {
   const history = useHistory();
 
   return (
@@ -16,38 +16,14 @@ function UnauthenticatedTopBar({ inRegister = false }) {
         <Logo />
       </div>
       <div className="session-buttons">
-        {inRegister ? (
-          <Button
-            onPress={() => {
-              history.push("/");
-            }}
-            label="Sair"
-            hasBg={false}
-          />
-        ) : (
-          <>
-            <Button
-              onPress={() => {
-                history.push("/signup");
-              }}
-              label="Quero ser um jedi"
-            />
-            <Button
-              onPress={() => {
-                history.push("/signup");
-              }}
-              label="Cadastrar-se"
-              hasBg={false}
-            />
-            <Button
-              onPress={() => {
-                history.push("/dashboard");
-              }}
-              label="Entrar"
-              hasBg={false}
-            />
-          </>
-        )}
+        <Button onPress={() => {}} label="Criar uma nova trilha" />
+        <Button
+          onPress={() => {
+            history.push("/dashboard");
+          }}
+          label="Entrar"
+          hasBg={false}
+        />
       </div>
     </div>
   );
