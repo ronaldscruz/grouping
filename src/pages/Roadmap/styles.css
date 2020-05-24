@@ -1,0 +1,11 @@
+.roadmap-page-wrapper {
+  max-width: 825px;
+  margin: 0 auto 32px;
+}
+
+.roadmap-text {
+  color: #404040;
+  margin: 32px 0;
+  line-height: 28px;
+  font-size: 18px;
+}

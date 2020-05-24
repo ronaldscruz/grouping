@@ -8,7 +8,14 @@ import fbIcon from "../../assets/ic_facebook.png";
 import inIcon from "../../assets/ic_linkedin.png";
 import ttIcon from "../../assets/ic_twitter.png";
 
-function ArticleRoadmapHeader({ article }) {
+function ArticleRoadmapHeader({
+  type = "article",
+  title,
+  authorName,
+  date,
+  timeInMinutes,
+  authorPlan,
+}) {
   function formatDate(date) {
     const monthsMap = [
       "Jan",
@@ -32,18 +39,23 @@ function ArticleRoadmapHeader({ article }) {
     return `${month} ${day}, ${year}`;
   }
 
+  timeInMinutes =
+    timeInMinutes >= 60 ? `${timeInMinutes / 60}h` : timeInMinutes + "min";
+
+  const activityType = type === "roadmap" ? "estudo" : "leitura";
+
   return (
     <div>
-      <h1 className="article-roadmap-header-title"> {article.title} </h1>
+      <h1 className="article-roadmap-header-title"> {title} </h1>
       <div className="d-flex justify-content-between align-items-end">
         <div className="d-flex">
           <SquareButton innerImg={profilePhoto} />
           <div className="header-content">
-            <p className="header-name">{article.author.name}</p>
+            <p className="header-name">{authorName}</p>
             <div className="header-subtitle">
               <p>
-                {formatDate(article.date)} · {article.timeInMinutes}min de
-                conteúdo · <span className="plan">{article.author.plan}</span>
+                {formatDate(date)} · {timeInMinutes} de {activityType} ·{" "}
+                <span className="plan">{authorPlan}</span>
               </p>
             </div>
           </div>

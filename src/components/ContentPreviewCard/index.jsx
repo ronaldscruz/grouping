@@ -48,12 +48,10 @@ function ContentPreviewCard({
           className="content-title"
           onClick={() => history.push(`${type}s/${id}`)}
         >
-          {" "}
-          {title.toUpperCase()}{" "}
+          {title.toUpperCase()}
         </h1>
         <span className="content-author">
-          {" "}
-          by {author} {isArticle && `· ${formatDate(new Date(date))}`}{" "}
+          by {author} {isArticle ? `· ${formatDate(new Date(date))}` : ""}
         </span>
       </div>
       <div className="card-right-content">

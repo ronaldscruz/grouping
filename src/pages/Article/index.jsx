@@ -8,6 +8,7 @@ import Comments from "../../components/Comments";
 
 function Article() {
   const articleMock = {
+    id: 177,
     title: "A queda da torre de piza",
     author: {
       photoSrc: null,
@@ -49,7 +50,13 @@ function Article() {
         <AuthenticatedTopBar />
         <div className="article-page-wrapper">
           <div className="article-content">
-            <ArticleRoadmapHeader article={articleMock} />
+            <ArticleRoadmapHeader
+              authorName={articleMock.author.name}
+              authorPlan={articleMock.author.plan}
+              date={articleMock.date}
+              title={articleMock.title}
+              timeInMinutes={articleMock.timeInMinutes}
+            />
             <div className="article-text">{articleMock.content}</div>
           </div>
           <Comments comments={articleMock.comments} />

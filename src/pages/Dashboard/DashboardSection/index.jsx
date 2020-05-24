@@ -1,7 +1,7 @@
 import React from "react";
 import "./styles.css";
 
-import ContentPreviewCard from "../ContentPreviewCard";
+import ContentPreviewCard from "../../../components/ContentPreviewCard";
 
 function DashboardSection({ title, articles, roadmaps }) {
   return (
