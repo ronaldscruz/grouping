@@ -26,6 +26,11 @@ body {
   font-size: 14px;
 }
 
+.MuiSvgIcon-root.__medium {
+  font-size: 16px;
+}
+
+
 .MuiSvgIcon-root.__mr {
   margin-right: 4px;
   margin-bottom: 2px;
@@ -46,4 +51,8 @@ body {
 
 .justify-content-center {
   justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
 }
