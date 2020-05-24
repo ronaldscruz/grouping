@@ -1,19 +1,29 @@
 import React from "react";
 import "./styles.css";
 
+import { useHistory } from "react-router-dom";
+
 // Assets
-import logo from "../../assets/logo.png";
 import Button from "../Button";
+import Logo from "../Logo";
 
 function UnauthenticatedTopBar() {
+  const history = useHistory();
+
   return (
     <div className="unauth-top-bar">
       <div className="logo-wrapper">
-        <img className="logo" src={logo} alt="Logo do Grouping" />
+        <Logo />
       </div>
       <div className="session-buttons">
         <Button onPress={() => {}} label="Criar uma nova trilha" />
-        <Button onPress={() => {}} label="Entrar" hasBg={false} />
+        <Button
+          onPress={() => {
+            history.push("/dashboard");
+          }}
+          label="Entrar"
+          hasBg={false}
+        />
       </div>
     </div>
   );

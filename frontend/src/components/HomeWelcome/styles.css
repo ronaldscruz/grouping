@@ -1,14 +1,11 @@
 .home-info-wrapper {
   margin: 100px 80px 0;
-  position: relative;
   display: flex;
   align-items: center;
 }
 
 .welcome-text {
   z-index: 2;
-  max-width: 685px;
-  position: relative;
 }
 
 .welcome-organize {
@@ -25,7 +22,4 @@
 
 .img-studying {
   width: 470px;
-  position: absolute;
-  right: 0;
-  z-index: 1;
 }
