@@ -7,7 +7,7 @@ import studyingImg from "../../assets/studying.png";
 // Components
 import Button from "../Button";
 
-function HomeInfo() {
+function HomeWelcome() {
   return (
     <div className="home-info-wrapper">
       <div className="welcome-text">
@@ -27,4 +27,4 @@ function HomeInfo() {
   );
 }
 
-export default HomeInfo;
+export default HomeWelcome;

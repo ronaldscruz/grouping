@@ -2,13 +2,13 @@ import React from "react";
 import "./styles.css";
 
 import UnauthenticatedTopBar from "../../components/UnauthenticatedTopBar";
-import HomeInfo from "../../components/HomeInfo";
+import HomeWelcome from "../../components/HomeWelcome";
 
 function Home() {
   return (
     <div className="home-wrapper">
       <UnauthenticatedTopBar />
-      <HomeInfo />
+      <HomeWelcome />
     </div>
   );
 }
