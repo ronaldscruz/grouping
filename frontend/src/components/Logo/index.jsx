@@ -4,7 +4,7 @@ import logo from "../../assets/logo.png";
 
 import { useHistory } from "react-router-dom";
 
-function Logo() {
+function Logo({ width }) {
   const history = useHistory();
 
   return (
@@ -13,6 +13,7 @@ function Logo() {
       src={logo}
       alt="Logo do Grouping"
       onClick={() => history.push("/")}
+      width={width ? width + "px" : "125px"}
     />
   );
 }

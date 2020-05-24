@@ -13,3 +13,7 @@ body {
   margin: 0;
   font-family: Avenir;
 }
+
+.__icon-mr {
+  margin-right: 15px;
+}
