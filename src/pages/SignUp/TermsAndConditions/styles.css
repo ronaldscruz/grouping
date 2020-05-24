@@ -1,0 +1,13 @@
+.terms-title {
+  display: block;
+  font-weight: 750;
+  font-size: 40px;
+  color: #2e2e2e;
+}
+
+.terms-content {
+  font-size: 20px;
+  color: #3d3d3d;
+  line-height: 24px;
+  margin: 24px 0 50px;
+}
