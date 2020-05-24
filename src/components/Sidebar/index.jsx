@@ -13,7 +13,7 @@ function Sidebar() {
     <div className="sidebar-wrapper">
       <div className="top-content">
         <div className="sidebar-logo">
-          <Logo width={155} />
+          <Logo width={155} customUrl="/dashboard" />
         </div>
         <ul className="sidebar-items">
           <li>

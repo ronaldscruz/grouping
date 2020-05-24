@@ -16,6 +16,7 @@ function Button({
 
   return (
     <button
+      type="button"
       className={`colored-button ${hasBg} ${hasGradient} ${rounded} ${bold}`}
       onClick={onPress}
     >
