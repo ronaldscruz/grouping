@@ -4,17 +4,15 @@ import logo from "../../assets/logo.png";
 
 import { useHistory } from "react-router-dom";
 
-function Logo({ width, customUrl }) {
+function Logo({ width }) {
   const history = useHistory();
-
-  const url = customUrl ? customUrl : "/";
 
   return (
     <img
       className="logo"
       src={logo}
       alt="Logo do Grouping"
-      onClick={() => history.push(url)}
+      onClick={() => history.push("/")}
       width={width ? width + "px" : "125px"}
     />
   );

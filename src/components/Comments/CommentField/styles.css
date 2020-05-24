@@ -1,0 +1,23 @@
+.write-comment-wrapper {
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  padding: 20px 16px;
+  border: 1px solid #DCDCDC;
+  width: 100%;
+  font-family: Avenir;
+}
+
+.comment-field {
+  border: none;
+  width: 100%;
+  margin-left: 10px;
+  background: none;
+  outline: none;
+  color: #404040;
+  font-size: 14px;
+}
+
+.comment-icon {
+  color: #7E7E7E;
+}
