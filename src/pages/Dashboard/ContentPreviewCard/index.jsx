@@ -1,9 +1,19 @@
 import React from "react";
 import "./styles.css";
 
+import { useHistory } from "react-router-dom";
+
 import { QueryBuilder, FavoriteBorder } from "@material-ui/icons";
 
-function ContentPreviewCard({ type, title, author, date, duration, likes }) {
+function ContentPreviewCard({
+  id,
+  type,
+  title,
+  author,
+  date,
+  duration,
+  likes,
+}) {
   function formatDate(date) {
     const monthsMap = [
       "jan",
@@ -27,12 +37,20 @@ function ContentPreviewCard({ type, title, author, date, duration, likes }) {
     return `${day} ${month} ${year}`;
   }
 
+  const history = useHistory();
+
   const isArticle = type === "article";
 
   return (
     <article className="content-preview-card">
       <div className="card-left-content">
-        <h1 className="content-title"> {title.toUpperCase()} </h1>
+        <h1
+          className="content-title"
+          onClick={() => history.push(`${type}/${id}`)}
+        >
+          {" "}
+          {title.toUpperCase()}{" "}
+        </h1>
         <span className="content-author">
           {" "}
           by {author} {isArticle && `· ${formatDate(new Date(date))}`}{" "}

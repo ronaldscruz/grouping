@@ -28,5 +28,6 @@ body {
 }
 
 .__consider-sidebar {
-  margin-left: 335px;
+  margin-left: 315px;
+  padding: 0 25px;
 }

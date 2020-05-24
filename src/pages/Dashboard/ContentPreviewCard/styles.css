@@ -15,10 +15,16 @@
 }
 
 .content-title {
+  cursor: pointer;
   font-size: 16px;
   font-weight: bold;
   color: #404040;
   margin: 0 0 7px;
+  transition: all 0.1s ease;
+}
+
+.content-title:hover {
+  color: #1a1a1a;
 }
 
 .content-author,
