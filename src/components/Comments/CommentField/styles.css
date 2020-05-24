@@ -3,21 +3,23 @@
   align-items: center;
   border-radius: 12px;
   padding: 20px 16px;
-  border: 1px solid #DCDCDC;
-  width: 100%;
+  border: 1px solid #dcdcdc;
+  flex: 1;
   font-family: Avenir;
 }
 
 .comment-field {
+  display: flex;
+  flex: 1;
   border: none;
-  width: 100%;
   margin-left: 10px;
   background: none;
   outline: none;
   color: #404040;
   font-size: 14px;
+  font-family: Avenir;
 }
 
 .comment-icon {
-  color: #7E7E7E;
+  color: #7e7e7e;
 }
