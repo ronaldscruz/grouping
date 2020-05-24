@@ -1,8 +1,10 @@
 .comment-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   border-radius: 12px;
   padding: 20px 16px;
-  border: 1px solid #DCDCDC;
-  width: 100%;
+  border: 1px solid #dcdcdc;
 }
 
 .comment-text {
@@ -13,9 +15,10 @@
 
 .like-icon {
   margin-right: 6px;
-  color: #B92020;
+  color: #b92020;
 }
 
 .like-text {
   font-size: 14px;
+  color: #404040;
 }
