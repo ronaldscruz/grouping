@@ -12,6 +12,10 @@
   background-color: #f4f4f4;
   color: #404040;
   font-size: 18px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .square-button:focus {

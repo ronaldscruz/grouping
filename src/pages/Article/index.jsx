@@ -3,18 +3,20 @@ import "./styles.css";
 
 import AuthenticatedTopBar from "../../components/AuthenticatedTopBar";
 import Sidebar from "../../components/Sidebar";
+import ArticleRoadmapHeader from "../../components/ArticleRoadmapHeader"
 
 function Article() {
   const articleMock = {
       title: 'A queda da torre de piza',
-      autor: {
+      author: {
         photoSrc: null,
         name: 'Victor Tinoco',
-        isJedi: true,
+        plan: 'Cavalheiro Jedi',
         facebook: 'fb.com/victormartinstinoco',
         linkedin: 'linkedin.com/in/victormartinstinoco',
         twitter: 'twitter.com//victrtinoco'
       },
+      date: new Date("2020-05-24 08:12:00"),
       timeInMinutes: 12,
       likes: 800,
       content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a eleifend tellus. Fusce tristique pulvinar porta. Fusce mattis est ac tempus blandit. Praesent imperdiet mi nibh, vitae pharetra est malesuada eget. Mauris egestas erat sem, in ultrices ante aliquet fringilla. Aenean pharetra vehicula est commodo dapibus. Vivamus nec ultricies eros. Morbi nec turpis sed arcu varius convallis. Cras ullamcorper nibh eleifend lacinia pellentesque. Sed varius porta arcu, non laoreet risus dictum ut. Morbi tristique in diam eget ullamcorper. Nulla euismod odio gravida vulputate fermentum. Sed posuere mauris quis odio tristique pretium. Aliquam risus turpis, condimentum id tempus ut, ultrices at odio. Donec et elit a dui euismod finibus quis a quam. Nunc aliquam hendrerit imperdiet.
@@ -29,6 +31,9 @@ function Article() {
       <Sidebar />
       <div className="__consider-sidebar">
         <AuthenticatedTopBar />
+        <ArticleRoadmapHeader 
+          article={articleMock}
+        />
       </div>
     </div>
   );
