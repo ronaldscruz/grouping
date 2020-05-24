@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import Groups from "./pages/Groups";
+import GroupChat from "./pages/GroupChat";
 
 export default function Routes() {
   return (
@@ -12,6 +13,7 @@ export default function Routes() {
         <Route exact path="/" component={Home} />
         <Route exact path="/dashboard" component={Dashboard} />
         <Route exact path="/groups" component={Groups} />
+        <Route exact path="/groups/:id" component={GroupChat} />
       </Switch>
     </Router>
   );
