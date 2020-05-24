@@ -2,10 +2,10 @@ import React from "react";
 import "./styles.css";
 
 // Assets
-import studyingImg from "../../assets/studying.png";
+import studyingImg from "../../../assets/studying.png";
 
 // Components
-import Button from "../Button";
+import Button from "../../../components/Button";
 
 function HomeWelcome() {
   return (

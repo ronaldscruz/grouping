@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.css";
 
 import UnauthenticatedTopBar from "../../components/UnauthenticatedTopBar";
-import HomeWelcome from "../../components/HomeWelcome";
+import HomeWelcome from "./HomeWelcome";
 
 function Home() {
   return (

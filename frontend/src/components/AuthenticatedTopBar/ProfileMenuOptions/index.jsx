@@ -2,13 +2,13 @@ import React from "react";
 import "./styles.css";
 
 // Assets
-import profilePhoto from "../../assets/profile_photo.png";
+import profilePhoto from "../../../assets/profile_photo.png";
 
 // Icons
 import { Notifications } from "@material-ui/icons";
 
 // Components
-import SquareButton from "../SquareButton";
+import SquareButton from "../../SquareButton";
 
 function ProfileMenuOptions() {
   return (

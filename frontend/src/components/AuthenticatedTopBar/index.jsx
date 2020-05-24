@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.css";
 
 // Components
-import ProfileMenuOptions from "../ProfileMenuOptions";
+import ProfileMenuOptions from "./ProfileMenuOptions";
 import Logo from "../Logo";
 import Button from "../Button";
 
