@@ -36,6 +36,17 @@
   transition: all 0.2s ease;
 }
 
+.sidebar-item a {
+  color: #404040;
+  text-decoration: none !important;
+}
+
+.sidebar-item a:focus {
+  color: #404040;
+  text-decoration: none;
+  outline: 0 !important;
+}
+
 .sidebar-item:hover {
   background: #ffe4e4;
 }

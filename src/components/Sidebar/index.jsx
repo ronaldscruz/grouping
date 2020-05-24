@@ -1,6 +1,8 @@
 import React from "react";
 import "./styles.css";
 
+import { NavLink } from "react-router-dom";
+
 import Logo from "../Logo";
 import Button from "../Button";
 
@@ -14,8 +16,14 @@ function Sidebar() {
           <Logo width={155} />
         </div>
         <ul className="sidebar-items">
-          <li className="sidebar-item __selected">
-            <Home className="__icon-mr" /> Home
+          <li>
+            <NavLink
+              className="sidebar-item"
+              to="/dashboard"
+              activeClassName="__selected"
+            >
+              <Home className="__icon-mr" /> Home
+            </NavLink>
           </li>
           <li className="sidebar-item">
             <ClearAll className="__icon-mr" /> Trilhas
