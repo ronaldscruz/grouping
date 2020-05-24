@@ -1,0 +1,24 @@
+.greeting-wrapper {
+  margin-bottom: 52px;
+}
+
+.groups-greeting {
+  color: #404040;
+  font-size: 28px;
+  margin-bottom: 2px;
+}
+
+.groups-listing-title {
+  color: #404040;
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.groups-description {
+  font-size: 14px;
+  color: #8a8a8a;
+}
+
+.subject-tabs-group-wrapper {
+  margin-top: 15px;
+}

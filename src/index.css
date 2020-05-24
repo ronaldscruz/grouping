@@ -22,6 +22,10 @@ body {
   font-size: 12px;
 }
 
+.MuiSvgIcon-root.__small {
+  font-size: 14px;
+}
+
 .MuiSvgIcon-root.__mr {
   margin-right: 4px;
   margin-bottom: 2px;

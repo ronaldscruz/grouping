@@ -1,0 +1,51 @@
+.group-card {
+  display: inline-block;
+  width: 350px;
+  height: 220px;
+  margin: 0 26px 26px 0;
+  background: #f4f4f4;
+  border-radius: 15px;
+}
+
+.group-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6px 14px 14px;
+}
+
+.group-img,
+.group-card-name {
+  cursor: pointer;
+}
+
+.group-card-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #404040;
+}
+
+.members-quantity {
+  color: #6a6a6a;
+}
+
+.quantity-title {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+.members-to-limit {
+  margin-top: 6px;
+  height: 3px;
+  background: #c8c8c8;
+  border-radius: 2px;
+}
+
+.current-members {
+  width: 55%;
+  height: 3px;
+  background: #ff6060;
+  border-radius: 2px;
+}

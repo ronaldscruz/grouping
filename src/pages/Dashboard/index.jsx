@@ -4,7 +4,7 @@ import "./styles.css";
 import AuthenticatedTopBar from "../../components/AuthenticatedTopBar";
 import Sidebar from "../../components/Sidebar";
 import DashboardGreeting from "./DashboardGreeting";
-import SubjectTabs from "./SubjectTabs";
+import SubjectTabs from "../../components/SubjectTabs";
 import DashboardSection from "./DashboardSection";
 
 function Dashboard() {
