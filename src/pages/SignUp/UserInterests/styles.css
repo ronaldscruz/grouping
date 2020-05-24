@@ -1,0 +1,12 @@
+.user-interests-description {
+  display: block;
+  font-weight: 750;
+  font-size: 40px;
+  color: #404040;
+}
+
+.user-interests-explanation {
+  font-size: 20px;
+  color: #8a8a8a;
+  margin: 12px 0 34px;
+}
