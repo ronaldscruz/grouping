@@ -3,7 +3,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 24px;
+  padding: 24px 24px 24px 0;
+  margin-bottom: 26px;
 }
 
 .top-bar-right-content {

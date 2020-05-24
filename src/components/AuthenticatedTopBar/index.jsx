@@ -8,7 +8,7 @@ import Button from "../Button";
 
 function AuthenticatedTopBar() {
   return (
-    <div className="auth-top-bar __consider-sidebar">
+    <div className="auth-top-bar">
       <SearchField />
       <div className="top-bar-right-content">
         <Button

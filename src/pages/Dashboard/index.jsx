@@ -3,12 +3,16 @@ import "./styles.css";
 
 import AuthenticatedTopBar from "../../components/AuthenticatedTopBar";
 import Sidebar from "../../components/Sidebar";
+import DashboardGreeting from "./DashboardGreeting";
 
 function Dashboard() {
   return (
     <div className="dashboard-wrapper">
       <Sidebar />
-      <AuthenticatedTopBar />
+      <div className="__consider-sidebar">
+        <AuthenticatedTopBar />
+        <DashboardGreeting />
+      </div>
     </div>
   );
 }
