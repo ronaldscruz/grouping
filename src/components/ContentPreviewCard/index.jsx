@@ -6,6 +6,7 @@ import { useHistory } from "react-router-dom";
 import { QueryBuilder, FavoriteBorder } from "@material-ui/icons";
 
 function ContentPreviewCard({
+  larger = false,
   id,
   type,
   title,
@@ -41,17 +42,19 @@ function ContentPreviewCard({
 
   const isArticle = type === "article";
 
+  larger = larger ? "__larger" : "";
+
   return (
-    <article className="content-preview-card">
+    <article className={`content-preview-card ${larger}`}>
       <div className="card-left-content">
         <h1
           className="content-title"
-          onClick={() => history.push(`${type}s/${id}`)}
+          onClick={() => history.push(`/${type}s/${id}`)}
         >
           {title.toUpperCase()}
         </h1>
         <span className="content-author">
-          by {author} {isArticle ? `· ${formatDate(new Date(date))}` : ""}
+          by {author.name} {isArticle ? `· ${formatDate(new Date(date))}` : ""}
         </span>
       </div>
       <div className="card-right-content">

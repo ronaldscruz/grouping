@@ -11,7 +11,7 @@ function Roadmap() {
   const roadmapMock = {
     title: "Revolução Francesa do começo ao fim",
     description:
-      "Opa, tudo bem? Bem vindo a trilha que vai te dar o step-by-step para aprender sobre a guerra fria: o que causou, quem foram os envolvidos e a tensão que dividiu o mundo inteiro em duas partes",
+      "Opa, tudo bem? Bem vindo a trilha que vai te dar o step-by-step para aprender sobre a revolução francesa, vi que as trilhas que postaram não estão 100% corretas, decidi postar do meu jeito :)",
     author: {
       photoSrc: null,
       name: "Victor Tinoco",
@@ -36,6 +36,98 @@ function Roadmap() {
           linkedin: "linkedin.com/in/victormartinstinoco",
           twitter: "twitter.com//victrtinoco",
         },
+      },
+    ],
+    articles: [
+      {
+        id: 177,
+        title: "Como se deu o início da revolução francesa",
+        author: {
+          photoSrc: null,
+          name: "Victor Tinoco",
+          plan: "Cavaleiro Jedi",
+          facebook: "fb.com/victormartinstinoco",
+          linkedin: "linkedin.com/in/victormartinstinoco",
+          twitter: "twitter.com//victrtinoco",
+        },
+        date: new Date("2020-05-24 08:12:00"),
+        timeInMinutes: 12,
+        likes: 800,
+        comments: [
+          {
+            text: "Me ajudou muito! Acho que esse ano o Enem sai 😂🙏",
+            likes: 154,
+            date: new Date("2020-05-24 08:12:00"),
+            author: {
+              photoSrc: null,
+              name: "Arthur Carvalho",
+              plan: "Mestre Jedi",
+              facebook: "fb.com/victormartinstinoco",
+              linkedin: "linkedin.com/in/victormartinstinoco",
+              twitter: "twitter.com//victrtinoco",
+            },
+          },
+        ],
+      },
+      {
+        id: 178,
+        title: "Curiosidades sobre Napoleão Bonaparte 👀",
+        author: {
+          photoSrc: null,
+          name: "Victor Tinoco",
+          plan: "Cavaleiro Jedi",
+          facebook: "fb.com/victormartinstinoco",
+          linkedin: "linkedin.com/in/victormartinstinoco",
+          twitter: "twitter.com//victrtinoco",
+        },
+        date: new Date("2020-05-26 08:12:00"),
+        timeInMinutes: 12,
+        likes: 800,
+        comments: [
+          {
+            text: "Me ajudou muito! Acho que esse ano o Enem sai 😂🙏",
+            likes: 154,
+            date: new Date("2020-05-24 08:12:00"),
+            author: {
+              photoSrc: null,
+              name: "Arthur Carvalho",
+              plan: "Mestre Jedi",
+              facebook: "fb.com/victormartinstinoco",
+              linkedin: "linkedin.com/in/victormartinstinoco",
+              twitter: "twitter.com//victrtinoco",
+            },
+          },
+        ],
+      },
+      {
+        id: 179,
+        title: "Uma visão europeia moderna sobre a Revolução Francesa",
+        author: {
+          photoSrc: null,
+          name: "Filipe Figueiredo",
+          plan: "Mestre Jedi",
+          facebook: "fb.com/victormartinstinoco",
+          linkedin: "linkedin.com/in/victormartinstinoco",
+          twitter: "twitter.com//victrtinoco",
+        },
+        date: new Date("2020-05-25 08:12:00"),
+        timeInMinutes: 12,
+        likes: 800,
+        comments: [
+          {
+            text: "Me ajudou muito! Acho que esse ano o Enem sai 😂🙏",
+            likes: 154,
+            date: new Date("2020-05-24 08:12:00"),
+            author: {
+              photoSrc: null,
+              name: "Arthur Carvalho",
+              plan: "Mestre Jedi",
+              facebook: "fb.com/victormartinstinoco",
+              linkedin: "linkedin.com/in/victormartinstinoco",
+              twitter: "twitter.com//victrtinoco",
+            },
+          },
+        ],
       },
     ],
   };
