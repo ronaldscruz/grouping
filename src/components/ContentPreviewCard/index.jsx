@@ -5,39 +5,7 @@ import { useHistory } from "react-router-dom";
 
 import { QueryBuilder, FavoriteBorder } from "@material-ui/icons";
 
-function ContentPreviewCard({
-  larger = false,
-  id,
-  type,
-  title,
-  author,
-  date,
-  duration,
-  likes,
-}) {
-  function formatDate(date) {
-    const monthsMap = [
-      "jan",
-      "fev",
-      "mar",
-      "abr",
-      "mai",
-      "jun",
-      "jul",
-      "ago",
-      "set",
-      "out",
-      "nov",
-      "dez",
-    ];
-
-    const day = date.getUTCDate();
-    const month = monthsMap[date.getMonth()];
-    const year = date.getFullYear();
-
-    return `${day} ${month} ${year}`;
-  }
-
+function ContentPreviewCard({ larger = false, id, type, title, author }) {
   const history = useHistory();
 
   const isArticle = type === "article";
@@ -54,18 +22,18 @@ function ContentPreviewCard({
           {title.toUpperCase()}
         </h1>
         <span className="content-author">
-          by {author.name} {isArticle ? `· ${formatDate(new Date(date))}` : ""}
+          by {author?.name} {isArticle ? `· 24 mai 2020` : ""}
         </span>
       </div>
       <div className="card-right-content">
         <span className="content-duration">
           <QueryBuilder className="__smaller __mr" />
-          {duration}h {!isArticle && "de trilha"}
+          2h {!isArticle && "de trilha"}
         </span>
         {isArticle && (
           <span className="content-likes">
             <FavoriteBorder className="__smaller __mr content-likes-icon" />
-            {likes}
+            80
           </span>
         )}
       </div>

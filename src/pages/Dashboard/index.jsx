@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./styles.css";
+
+import api from "../../services/api";
 
 import AuthenticatedTopBar from "../../components/AuthenticatedTopBar";
 import Sidebar from "../../components/Sidebar";
@@ -8,37 +10,21 @@ import SubjectTabs from "../../components/SubjectTabs";
 import DashboardSection from "./DashboardSection";
 
 function Dashboard() {
-  const mockArticles = [
-    {
-      id: 1,
-      title: "Curiosidades sobre a Guerra Fria",
-      author: { name: "Ronald S. Cruz" },
-      duration: 2,
-      likes: 777,
-      date: new Date("2020-05-24 08:12:00"),
-    },
-  ];
+  const [subject, setSubject] = useState(1);
+  const [roadmaps, setRoadmaps] = useState([]);
+  const [articles, setArticles] = useState([]);
 
-  const mockRoadmaps = [
-    {
-      id: 1,
-      title: "Guerra Fria do começo ao fim!",
-      author: { name: "Ronald S. Cruz" },
-      duration: 4,
-    },
-    {
-      id: 2,
-      title: "Como se deu a Revolução Francesa",
-      author: { name: "Ronald S. Cruz" },
-      duration: 8,
-    },
-    {
-      id: 3,
-      title: "Resultados da Revolução Industrial",
-      author: { name: "Ronald S. Cruz" },
-      duration: 6,
-    },
-  ];
+  useEffect(() => {
+    async function fetchDashboardData() {
+      const roadmaps = await api.get("/roadmaps/" + subject);
+      const articles = await api.get("/posts/" + subject);
+
+      setRoadmaps(roadmaps?.data);
+      setArticles(articles?.data);
+    }
+
+    fetchDashboardData();
+  }, [subject]);
 
   return (
     <div className="dashboard-wrapper">
@@ -47,17 +33,21 @@ function Dashboard() {
         <AuthenticatedTopBar />
         <DashboardGreeting />
         <div className="subject-tabs-dashboard">
-          <SubjectTabs onSubjectChange={(subject) => {}} />
+          <SubjectTabs onSubjectChange={(subject) => setSubject(subject)} />
         </div>
         <div className="dashboard-content">
-          <DashboardSection
-            title="Top trilhas da semana"
-            roadmaps={mockRoadmaps}
-          />
-          <DashboardSection
-            title="Top artigos da semana"
-            articles={mockArticles}
-          />
+          {roadmaps.length > 0 && (
+            <DashboardSection
+              title="Top trilhas da semana"
+              roadmaps={roadmaps}
+            />
+          )}
+          {articles.length > 0 && (
+            <DashboardSection
+              title="Top artigos da semana"
+              articles={articles}
+            />
+          )}
         </div>
       </div>
     </div>

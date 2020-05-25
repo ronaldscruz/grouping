@@ -4,17 +4,16 @@ import "./styles.css";
 import ContentPreviewCard from "../ContentPreviewCard";
 
 function RoadmapDetails(props) {
+  const articles = props.posts ? props.posts : [];
+
   return (
     <div className="roadmap-details-component">
       <p className="roadmap-details-description">{props?.description}</p>
-      {props?.articles?.length > 0 &&
-        props.articles.map((a, aIndex) => {
+      {articles?.length > 0 &&
+        articles.map((a, aIndex) => {
           let isChecked = "";
 
-          if (props.articles[0] === a) isChecked = "__read";
-
-          console.log(a[0] === a[aIndex]);
-          console.log(isChecked);
+          if (articles[0] === a) isChecked = "__read";
 
           return (
             <div key={a.id} className="roadmap-article-wrapper">

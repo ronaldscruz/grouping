@@ -14,30 +14,24 @@ function DashboardSection({ title, articles, roadmaps }) {
       </div>
       {articles?.length > 0 &&
         articles.map((a) => (
-          <div className="content-card-dashboard">
+          <div key={a.id} className="content-card-dashboard">
             <ContentPreviewCard
               id={a.id}
-              key={"article-" + a.id}
               type="article"
               title={a.title}
-              author={a.author}
-              duration={a.duration}
-              likes={a.likes}
-              date={a.date}
+              author={a.userPost}
+              date={new Date(a.updatedAt)}
             />
           </div>
         ))}
-
       {roadmaps?.length > 0 &&
         roadmaps.map((r) => (
-          <div className="content-card-dashboard">
+          <div key={r.id} className="content-card-dashboard">
             <ContentPreviewCard
               id={r.id}
-              key={"roadmap-" + r.id}
               type="roadmap"
               title={r.title}
-              author={r.author}
-              duration={r.duration}
+              author={r.user}
             />
           </div>
         ))}

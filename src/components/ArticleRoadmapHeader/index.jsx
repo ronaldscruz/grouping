@@ -54,8 +54,8 @@ function ArticleRoadmapHeader({
             <p className="header-name">{authorName}</p>
             <div className="header-subtitle">
               <p>
-                {formatDate(date)} · {timeInMinutes} de {activityType} ·{" "}
-                <span className="plan">{authorPlan}</span>
+                {date ? formatDate(date) : "24 mai 2020"} · {timeInMinutes} de{" "}
+                {activityType} · <span className="plan">{authorPlan}</span>
               </p>
             </div>
           </div>

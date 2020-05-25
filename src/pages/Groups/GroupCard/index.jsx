@@ -6,7 +6,7 @@ import groupImg from "../../../assets/group.png";
 import { Group } from "@material-ui/icons";
 import { useHistory } from "react-router-dom";
 
-function GroupCard({ id, name, members, limit }) {
+function GroupCard({ id, title, members = 13, limit = 25 }) {
   const history = useHistory();
 
   const redirectToGroupPage = () => {
@@ -24,7 +24,7 @@ function GroupCard({ id, name, members, limit }) {
       />
       <div className="group-info">
         <span className="group-card-name" onClick={redirectToGroupPage}>
-          {name}
+          {title}
         </span>
         <div className="members-quantity">
           <span className="quantity-title">

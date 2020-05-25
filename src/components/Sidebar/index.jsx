@@ -37,7 +37,7 @@ function Sidebar() {
           <li>
             <NavLink
               className="sidebar-item"
-              to="/posts"
+              to="/articles"
               activeClassName="__selected"
             >
               <Assignment className="__large-mr" /> Artigos
