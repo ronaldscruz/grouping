@@ -12,7 +12,7 @@ function Dashboard() {
     {
       id: 1,
       title: "Curiosidades sobre a Guerra Fria",
-      author: "Ronald S. Cruz",
+      author: { name: "Ronald S. Cruz" },
       duration: 2,
       likes: 777,
       date: new Date("2020-05-24 08:12:00"),
@@ -23,19 +23,19 @@ function Dashboard() {
     {
       id: 1,
       title: "Guerra Fria do começo ao fim!",
-      author: "Ronald S. Cruz",
+      author: { name: "Ronald S. Cruz" },
       duration: 4,
     },
     {
       id: 2,
       title: "Como se deu a Revolução Francesa",
-      author: "Ronald S. Cruz",
+      author: { name: "Ronald S. Cruz" },
       duration: 8,
     },
     {
       id: 3,
       title: "Resultados da Revolução Industrial",
-      author: "Ronald S. Cruz",
+      author: { name: "Ronald S. Cruz" },
       duration: 6,
     },
   ];
@@ -58,7 +58,6 @@ function Dashboard() {
             title="Top artigos da semana"
             articles={mockArticles}
           />
-          <DashboardSection title="Trilhas ENEM 2020" roadmaps={mockRoadmaps} />
         </div>
       </div>
     </div>
