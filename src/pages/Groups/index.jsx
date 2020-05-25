@@ -39,8 +39,8 @@ function Groups() {
         <div className="groups-listing">
           <h1 className="groups-listing-title">Grupos</h1>
           {groups?.length > 0 &&
-            groups.map((g) => {
-              return <GroupCard {...g} />;
+            groups.map((g, index) => {
+              return <GroupCard key={index} {...g} />;
             })}
         </div>
       </div>
