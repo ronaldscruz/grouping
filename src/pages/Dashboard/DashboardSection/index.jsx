@@ -4,6 +4,8 @@ import "./styles.css";
 import ContentPreviewCard from "../../../components/ContentPreviewCard";
 
 function DashboardSection({ title, articles, roadmaps }) {
+  console.log(articles);
+
   return (
     <section className="dashboard-section">
       <div className="title-and-results">
@@ -20,14 +22,11 @@ function DashboardSection({ title, articles, roadmaps }) {
               key={"article-" + a.id}
               type="article"
               title={a.title}
-              author={a.author}
-              duration={a.duration}
-              likes={a.likes}
-              date={a.date}
+              author={a.userPost}
+              date={new Date(a.updatedAt)}
             />
           </div>
         ))}
-
       {roadmaps?.length > 0 &&
         roadmaps.map((r) => (
           <div className="content-card-dashboard">
@@ -36,8 +35,7 @@ function DashboardSection({ title, articles, roadmaps }) {
               key={"roadmap-" + r.id}
               type="roadmap"
               title={r.title}
-              author={r.author}
-              duration={r.duration}
+              author={r.user}
             />
           </div>
         ))}

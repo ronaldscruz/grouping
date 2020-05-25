@@ -1,46 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./styles.css";
 
 import AuthenticatedTopBar from "../../components/AuthenticatedTopBar";
 import Sidebar from "../../components/Sidebar";
 import ArticleRoadmapHeader from "../../components/ArticleRoadmapHeader";
 import Comments from "../../components/Comments";
+import api from "../../services/api";
 
-function Article() {
-  const articleMock = {
-    id: 177,
-    title: "A queda da torre de piza",
+function Article({ match }) {
+  const [article, setArticle] = useState(null);
+
+  const articleId = match.params.id;
+
+  useEffect(() => {
+    async function getArticle(articleId) {
+      const article = await api.get("/posts/info/" + articleId);
+
+      setArticle(article?.data);
+    }
+
+    getArticle(articleId);
+  });
+
+  const comments = {
+    text: "Me ajudou muito! Acho que esse ano o Enem sai 😂🙏",
+    likes: 154,
+    date: new Date("2020-05-24 08:12:00"),
     author: {
       photoSrc: null,
-      name: "Victor Tinoco",
-      plan: "Cavaleiro Jedi",
+      name: "Arthur Carvalho",
+      plan: "Mestre Jedi",
       facebook: "fb.com/victormartinstinoco",
       linkedin: "linkedin.com/in/victormartinstinoco",
       twitter: "twitter.com//victrtinoco",
     },
-    date: new Date("2020-05-24 08:12:00"),
-    timeInMinutes: 12,
-    likes: 800,
-    comments: [
-      {
-        text: "Me ajudou muito! Acho que esse ano o Enem sai 😂🙏",
-        likes: 154,
-        date: new Date("2020-05-24 08:12:00"),
-        author: {
-          photoSrc: null,
-          name: "Arthur Carvalho",
-          plan: "Mestre Jedi",
-          facebook: "fb.com/victormartinstinoco",
-          linkedin: "linkedin.com/in/victormartinstinoco",
-          twitter: "twitter.com//victrtinoco",
-        },
-      },
-    ],
-    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.Donec a eleifend tellus. Fusce tristique pulvinar porta. Fusce mattis est ac tempus blandit. Praesent imperdiet mi nibh, vitae pharetra est malesuada eget. Mauris egestas erat sem, in ultrices ante aliquet fringilla. Aenean pharetra vehicula est commodo dapibus. Vivamus nec ultricies eros. Morbi nec turpis sed arcu varius convallis. Cras ullamcorper nibh eleifend lacinia pellentesque. Sed varius porta arcu, non laoreet risus dictum ut. Morbi tristique in diam eget ullamcorper. Nulla euismod odio gravida vulputate fermentum. Sed posuere mauris quis odio tristique pretium. Aliquam risus turpis, condimentum id tempus ut, ultrices at odio. Donec et elit a dui euismod finibus quis a quam. Nunc aliquam hendrerit imperdiet.
-
-      Proin ac venenatis mi, vel aliquet nisi. Duis in magna augue. Integer laoreet gravida velit. Nulla sed accumsan nisl, vel hendrerit felis. Vivamus vel elementum metus. Morbi at libero dui. Vestibulum ornare lectus in tortor tincidunt tincidunt. Sed velit quam, rhoncus ut sapien cursus, varius aliquet diam. Integer sed augue ut purus accumsan semper at tempor eros. Duis erat tortor, pharetra eget enim bibendum, sollicitudin porttitor lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      
-      Maecenas efficitur mi ipsum, quis tempor ex dapibus ut. Pellentesque vel nunc vel lorem suscipit tincidunt. Duis tortor elit, dapibus vitae pretium a, ullamcorper nec nisl. Suspendisse sollicitudin arcu et tortor mattis sodales. Aenean iaculis, felis sit amet ornare lobortis, dolor lorem bibendum orci, nec accumsan dolor tortor ac leo. Duis viverra tincidunt sem et egestas. Nulla eu nulla eget turpis lobortis volutpat eu quis lectus. Suspendisse lacinia congue ligula, ut placerat lectus finibus id. Integer a libero congue ipsum porta gravida a sed velit. Etiam mattis, ligula varius iaculis ultricies, metus mi placerat augue, in tristique dui ligula nec nunc.`,
   };
 
   return (
@@ -48,19 +41,21 @@ function Article() {
       <Sidebar />
       <div className="__consider-sidebar">
         <AuthenticatedTopBar />
-        <div className="article-page-wrapper">
-          <div className="article-content">
-            <ArticleRoadmapHeader
-              authorName={articleMock.author.name}
-              authorPlan={articleMock.author.plan}
-              date={articleMock.date}
-              title={articleMock.title}
-              timeInMinutes={articleMock.timeInMinutes}
-            />
-            <div className="article-text">{articleMock.content}</div>
+        {article && (
+          <div className="article-page-wrapper">
+            <div className="article-content">
+              <ArticleRoadmapHeader
+                authorName={article.userPost.name}
+                authorPlan={article.userPost.plan}
+                date={new Date(article.updatedAt)}
+                title={article.title}
+                timeInMinutes={120}
+              />
+              <div className="article-text">{article.content}</div>
+            </div>
+            <Comments comments={[comments]} />
           </div>
-          <Comments comments={articleMock.comments} />
-        </div>
+        )}
       </div>
     </div>
   );
