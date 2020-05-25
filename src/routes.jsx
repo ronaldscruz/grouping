@@ -15,10 +15,16 @@ export default function Routes() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/dashboard" component={Dashboard} />
+
+        <Route exact path="/roadmaps" component={Dashboard} />
         <Route exact path="/roadmaps/:id" component={Roadmap} />
+
+        <Route exact path="/articles/" component={Dashboard} />
         <Route exact path="/articles/:id" component={Article} />
+
         <Route exact path="/groups" component={Groups} />
         <Route exact path="/groups/:id" component={GroupChat} />
+
         <Route exact path="/signup" component={SignUp} />
       </Switch>
     </Router>

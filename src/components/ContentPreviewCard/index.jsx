@@ -5,7 +5,7 @@ import { useHistory } from "react-router-dom";
 
 import { QueryBuilder, FavoriteBorder } from "@material-ui/icons";
 
-function ContentPreviewCard({ larger = false, id, type, title, author, date }) {
+function ContentPreviewCard({ larger = false, id, type, title, author }) {
   const history = useHistory();
 
   const isArticle = type === "article";

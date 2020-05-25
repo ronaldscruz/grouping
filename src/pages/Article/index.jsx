@@ -19,7 +19,7 @@ function Article({ match }) {
       setArticle(article?.data);
     }
 
-    getArticle(articleId);
+    !article && getArticle(articleId);
   });
 
   const comments = {
