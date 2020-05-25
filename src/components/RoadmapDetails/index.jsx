@@ -15,9 +15,6 @@ function RoadmapDetails(props) {
 
           if (articles[0] === a) isChecked = "__read";
 
-          console.log(a[0] === a[aIndex]);
-          console.log(isChecked);
-
           return (
             <div key={a.id} className="roadmap-article-wrapper">
               <div className={`is-read ${isChecked}`}></div>

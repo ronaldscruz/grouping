@@ -4,8 +4,6 @@ import "./styles.css";
 import ContentPreviewCard from "../../../components/ContentPreviewCard";
 
 function DashboardSection({ title, articles, roadmaps }) {
-  console.log(articles);
-
   return (
     <section className="dashboard-section">
       <div className="title-and-results">

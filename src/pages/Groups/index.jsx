@@ -1,16 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./styles.css";
 
 import Sidebar from "../../components/Sidebar";
 import AuthenticatedTopBar from "../../components/AuthenticatedTopBar";
 import SubjectTabs from "../../components/SubjectTabs";
 import GroupCard from "./GroupCard";
+import api from "../../services/api";
 
 function Groups() {
-  const mockGroups = [
-    { id: 1, name: "Intensivo ENEM 2020 SP", members: 13, limit: 25 },
-    { id: 2, name: "OAB Pernambuco", members: 13, limit: 25 },
-  ];
+  const [subject, setSubject] = useState(1);
+  const [groups, setGroups] = useState([]);
+
+  useEffect(() => {
+    async function fetchGroupsData() {
+      const groups = await api.get("/groups/" + subject);
+
+      setGroups([...groups?.data, ...groups?.data]);
+    }
+
+    fetchGroupsData();
+  }, [subject]);
 
   return (
     <div className="groups-wrapper">
@@ -24,13 +33,13 @@ function Groups() {
             pessoas com os mesmos gostos que o seu
           </span>
           <div className="subject-tabs-group-wrapper">
-            <SubjectTabs />
+            <SubjectTabs onSubjectChange={(subject) => setSubject(subject)} />
           </div>
         </div>
         <div className="groups-listing">
           <h1 className="groups-listing-title">Grupos</h1>
-          {mockGroups?.length > 0 &&
-            mockGroups.map((g) => {
+          {groups?.length > 0 &&
+            groups.map((g) => {
               return <GroupCard {...g} />;
             })}
         </div>

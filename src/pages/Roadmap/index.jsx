@@ -37,8 +37,6 @@ function Roadmap({ match }) {
     },
   };
 
-  console.log(roadmap);
-
   return (
     <div className="roadmap-wrapper">
       <Sidebar />
