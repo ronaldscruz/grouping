@@ -1,6 +1,20 @@
 # Grouping - 2020
 
+![](https://github.com/ronaldscruz/grouping/blob/master/frontend/src/assets/logo.png)
+
 ### YourHelp / Educação
+
+Projeto desenvolvido durante o HACKING+HELP 2020.<br>
+Protótipo: https://www.figma.com/file/n5ap8rCZYKJoqGSBCbw3eV/Untitled?node-id=0%3A1<br>
+Video/Pitch: https://www.youtube.com/watch?v=uo_HqURC9t4
+
+#### Time
+
+- [Ronald Cruz](https://www.linkedin.com/in/ronaldscruz/) - Desenvolvedor FullStack
+- [Gabriel Yago](https://www.linkedin.com/in/gabriel-yago/) - Desenvolvedor Backend
+- [Vinicius Okamoto](https://www.linkedin.com/in/vinicius-okamoto/) - Desenvolvedor FullStack
+- [Victor Martins](https://www.linkedin.com/in/victormartinstinoco/) - Designer UX/UI
+- [Pedro Tinem](https://www.instagram.com/pedro.tinem/) - Business
 
 #### Apresentação
 
