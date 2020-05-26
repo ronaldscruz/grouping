@@ -1,0 +1,52 @@
+.colored-button {
+  cursor: pointer;
+  border: none;
+
+  color: #535353;
+  background: none;
+  font-family: Avenir;
+
+  border-radius: 25px;
+  padding: 0 24px;
+  height: 42px;
+  line-height: 44px;
+
+  transition: all 0.2s ease;
+}
+
+.colored-button:focus {
+  outline: 0 !important;
+}
+
+.colored-button:hover {
+  color: #313131;
+}
+
+.__has-bg {
+  color: #fff;
+  background: #f86060;
+  min-width: 173px;
+}
+
+.__has-bg:hover {
+  color: #fff;
+  background: #c24848;
+}
+
+.__has-gradient {
+  color: #fff;
+  background: linear-gradient(90deg, #ff9f9f 0%, #f97b7b 100%);
+}
+
+.__has-gradient:hover {
+  color: #fff;
+  background: linear-gradient(90deg, #d38282 0%, #ca6363 100%);
+}
+
+.__rounded {
+  border-radius: 12px;
+}
+
+.__bold {
+  font-weight: 750;
+}

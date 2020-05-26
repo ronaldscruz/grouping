@@ -1,0 +1,40 @@
+.auth-top-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  margin-bottom: 26px;
+}
+
+.top-bar-right-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.members-to-limit {
+  width: 160px;
+  margin-top: 6px;
+  height: 3px;
+  background: #c8c8c8;
+  border-radius: 2px;
+}
+
+.current-members {
+  width: 55%;
+  height: 3px;
+  background: #ff6060;
+  border-radius: 2px;
+}
+
+.xp-info {
+  margin: 0 14px;
+}
+
+.xp-text-info {
+  display: flex;
+  justify-content: space-between;
+  color: #404040;
+  font-size: 12px;
+}

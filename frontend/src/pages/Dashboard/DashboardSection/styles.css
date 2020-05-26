@@ -1,0 +1,24 @@
+.dashboard-section {
+  margin-bottom: 50px;
+}
+
+.title-and-results {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-section-title {
+  color: #404040;
+  margin: 0 0 16px;
+}
+
+.results-quantity {
+  font-size: 14px;
+  color: #878787;
+}
+
+.content-card-dashboard {
+  display: inline-block;
+  margin: 0 26px 26px 0;
+}

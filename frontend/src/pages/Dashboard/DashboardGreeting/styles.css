@@ -1,0 +1,12 @@
+.greet-by-name {
+  display: block;
+  color: #404040;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.how-to-explore {
+  color: #8a8a8a;
+  font-size: 14px;
+}

@@ -1,0 +1,23 @@
+.search-field {
+  border: none;
+  width: 260px;
+  height: 38px;
+  margin-left: 10px;
+  background: none;
+  color: #404040;
+  font-family: Avenir;
+  font-size: 14px;
+}
+
+.search-field:focus {
+  outline: 0 !important;
+}
+
+.search-field-wrapper {
+  display: flex;
+  align-items: center;
+  color: #818181;
+  padding: 0 10px;
+  background: #f4f4f4;
+  border-radius: 12px;
+}

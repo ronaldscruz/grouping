@@ -1,0 +1,58 @@
+@font-face {
+  font-family: Avenir;
+  src: url("fonts/AvenirLTStd.otf");
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url("fonts/AvenirLTStd-bold.otf");
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  font-family: Avenir;
+}
+
+.__large-mr {
+  margin-right: 15px;
+}
+
+.MuiSvgIcon-root.__smaller {
+  font-size: 12px;
+}
+
+.MuiSvgIcon-root.__small {
+  font-size: 14px;
+}
+
+.MuiSvgIcon-root.__medium {
+  font-size: 16px;
+}
+
+
+.MuiSvgIcon-root.__mr {
+  margin-right: 4px;
+  margin-bottom: 2px;
+}
+
+.__consider-sidebar {
+  margin-left: 315px;
+  padding: 0 25px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}

@@ -1,0 +1,58 @@
+.content-preview-card {
+  display: flex;
+  justify-content: space-between;
+  background: #f4f4f4;
+  border-radius: 15px;
+  width: 420px;
+  height: 66px;
+  padding: 4px 16px 4px;
+}
+
+.content-preview-card.__larger {
+  width: 625px;
+}
+
+.card-left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-title {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: #404040;
+  margin: 0 0 7px;
+  transition: all 0.1s ease;
+}
+
+.content-title:hover {
+  color: #1a1a1a;
+}
+
+.content-author,
+.card-right-content {
+  font-size: 12px;
+  color: #6a6a6a;
+}
+
+.card-right-content {
+  display: flex;
+  align-self: flex-end;
+  padding-bottom: 14px;
+}
+
+.content-likes,
+.content-duration {
+  display: flex;
+  align-items: center;
+}
+
+.content-likes {
+  margin-left: 8px;
+}
+
+.content-likes-icon {
+  color: #b92020;
+}
