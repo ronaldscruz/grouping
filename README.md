@@ -25,11 +25,11 @@ Percebemos que os alunos não dispunham de uma plataforma onde poderiam consumir
 
 O Grouping é uma plataforma web, e futuramente mobile, criada para estudantes que os estimula a avaliar e criar o melhor conteúdo para estudo. Nossa tecnologia identifica os assuntos de maior interesse dos usuários e os oferece em maior quantidade automaticamente, além de filtrar conteúdo negativo ou ilegítimo.
 
-##### Por que o Grouping e não outra plataforma de ensino?
+#### Por que o Grouping e não outra plataforma de ensino?
 
 A maioria das plataformas de educação hoje fornecem uma tecnologia com base em perguntas e respostas, nosso diferencial é a filtragem e organização do conteúdo. Com as trilhas, alunos podem reunir diversos conteúdos que julgam ser interessantes na plataforma para que eles possam ser visualizados em sequência, conforme a preferência do aluno. Além disso, você pode se juntar a grupos de estudo criados por você ou pelos demais usuários da plataforma. Toda essa interação permite também os alunos possam ajudar uns aos outros (afinal, já é comprovado que a forma mais eficaz de aprender é ensinando).
 
-##### Atenção especial para estudantes de baixa renda
+#### Atenção especial para estudantes de baixa renda
 
 Ofereceremos maiores descontos e até gratuidade nos planos para usuários de baixa renda, estamos cansados da monopolização do ensino apenas para aqueles que têm dinheiro.
 
