@@ -14,7 +14,7 @@ Video/Pitch: https://www.youtube.com/watch?v=uo_HqURC9t4
 - [Gabriel Yago](https://www.linkedin.com/in/gabriel-yago/) - Desenvolvedor Backend
 - [Vinicius Okamoto](https://www.linkedin.com/in/vinicius-okamoto/) - Desenvolvedor FullStack
 - [Victor Martins](https://www.linkedin.com/in/victormartinstinoco/) - Designer UX/UI
-- [Pedro Tinem](https://www.instagram.com/pedro.tinem/) - Business
+- [Pedro Tinem](https://www.instagram.com/pedro.tinem/) - Designer/Business
 
 #### Apresentação
 
