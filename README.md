@@ -6,7 +6,7 @@
 
 Projeto desenvolvido durante o HACKING+HELP 2020.<br>
 Protótipo: https://www.figma.com/file/n5ap8rCZYKJoqGSBCbw3eV/Untitled?node-id=0%3A1<br>
-Video/Pitch: https://www.youtube.com/watch?v=uo_HqURC9t4
+Video/Pitch: https://www.youtube.com/watch?v=JoJiZGNHZIQ&feature=youtu.be
 
 #### Time
 
